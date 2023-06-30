@@ -48,3 +48,16 @@ Route::get('/booking', function () {
 Route::get('/details', function () {
     return view('car-single');
 });
+
+Route::any('/dashboard', function () {
+    return view('dashboard.admin');
+});
+
+Route::any('/kelola', function () {
+    return view('dashboard.kelola');
+});
+
+Route::any('/proses', function () {
+    return view('dashboard.proses');
+});
+
